@@ -2,10 +2,24 @@
 using ExemploFundamentos.Common.Models;
 
 
-Pessoa p1 = new Pessoa();
-p1.Nome = "Guilherme";
-p1.Idade = 33;
-p1.Apresentar();
+int[] arrayInteiros = new int[3]; //se eu não quiser passar o tamanho do array ao instanciar, tenho que passar os valores, conforme abaixo
+// int[] arrayInteiros = new int[] {32,452, 326};
+
+
+arrayInteiros[0] = 32;
+arrayInteiros[1] = 452;
+arrayInteiros[2] = 326;
+
+for (int i = 0; i < arrayInteiros.Length; i++)
+{
+    System.Console.WriteLine(arrayInteiros[i]);
+}
+
+
+// Pessoa p1 = new Pessoa();
+// p1.Nome = "Guilherme";
+// p1.Idade = 33;
+// p1.Apresentar();
 
 
 
