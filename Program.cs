@@ -3,19 +3,32 @@ using ExemploFundamentos.Models;
 
 
 
+int soma = 0, numero = 0;
 
-
-int b = 0;
-while (true)
+do
 {
-    if (b > 10){
-        break;
-    }
-    else{
-        Console.WriteLine(b);
-        b++;
-    }
-}
+    System.Console.Write("Digite um número (0 para parar): ");
+    numero = Convert.ToInt32(Console.ReadLine());
+
+    soma += numero;
+
+} while (numero != 0);
+
+System.Console.WriteLine($"A soma dos números é: {soma}");
+
+
+
+// int b = 0;
+// while (true)
+// {
+//     if (b > 10){
+//         break;
+//     }
+//     else{
+//         Console.WriteLine(b);
+//         b++;
+//     }
+// }
 
 
 
