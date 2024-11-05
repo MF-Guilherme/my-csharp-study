@@ -10,9 +10,18 @@ arrayInteiros[0] = 32;
 arrayInteiros[1] = 452;
 arrayInteiros[2] = 326;
 
+//sar FOR caso precise do índice
+System.Console.WriteLine("Iterando com o for");
 for (int i = 0; i < arrayInteiros.Length; i++)
 {
-    System.Console.WriteLine(arrayInteiros[i]);
+    System.Console.WriteLine($"Posição Nº{i} - valor: {arrayInteiros[i]}");
+}
+
+System.Console.WriteLine("Iterando com o foreach");
+
+//usar FOREACH se não for precisar do índice
+foreach(int valor in arrayInteiros) {
+    System.Console.WriteLine(valor);
 }
 
 
