@@ -2,8 +2,9 @@
 using ExemploFundamentos.Models;
 
 string opcao;
+bool exibirMenu = true;
 
-while (true)
+while (exibirMenu)
 {
     System.Console.WriteLine("Digite uma opção:");  
     System.Console.WriteLine("1 - Cadastrar Cliente");
@@ -29,7 +30,8 @@ while (true)
 
         case "4":
             System.Console.WriteLine("Programa encerrado");
-            Environment.Exit(0);
+            exibirMenu = false;
+            // Environment.Exit(0);
             break;
 
         default:
@@ -37,6 +39,8 @@ while (true)
             break;
     }
 }
+
+System.Console.WriteLine("Agora posso continuar o programa");
 
 
 
