@@ -3,14 +3,36 @@ using ExemploFundamentos.Models;
 
 
 
-for (int i = 0; i <= 10; i++)
+
+
+int b = 0;
+while (true)
 {
-    for (int j = 1; j <= 10; j++)    
-    {
-        Console.WriteLine($"{i} x {j} = {i * j}");
+    if (b > 10){
+        break;
     }
-    
+    else{
+        Console.WriteLine(b);
+        b++;
+    }
 }
+
+
+
+
+
+
+
+
+
+// for (int i = 0; i <= 10; i++)
+// {
+//     for (int j = 1; j <= 10; j++)    
+//     {
+//         Console.WriteLine($"{i} x {j} = {i * j}");
+//     }
+    
+// }
 
 
 
