@@ -1,28 +1,71 @@
-﻿using System.Globalization;
+﻿using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
+using System.Globalization;
 using ExemploFundamentos.Common.Models;
 
 
-int[] arrayInteiros = new int[3]; //se eu não quiser passar o tamanho do array ao instanciar, tenho que passar os valores, conforme abaixo
-// int[] arrayInteiros = new int[] {32,452, 326};
+List<string> listaString = new List<string>();
 
+listaString.Add("SP");
+listaString.Add("BA");
+listaString.Add("MG");
+listaString.Add("RJ");
+listaString.Add("AC");
 
-arrayInteiros[0] = 32;
-arrayInteiros[1] = 452;
-arrayInteiros[2] = 326;
-
-//sar FOR caso precise do índice
 System.Console.WriteLine("Iterando com o for");
-for (int i = 0; i < arrayInteiros.Length; i++)
-{
-    System.Console.WriteLine($"Posição Nº{i} - valor: {arrayInteiros[i]}");
+for (int i = 0; i < listaString.Count; i++){
+
+    System.Console.WriteLine($"Posição Nº{i} - valor: {listaString[i]}");    
+
 }
 
+System.Console.WriteLine();
 System.Console.WriteLine("Iterando com o foreach");
-
-//usar FOREACH se não for precisar do índice
-foreach(int valor in arrayInteiros) {
-    System.Console.WriteLine(valor);
+int contador = 0;
+foreach (string item in listaString)
+{
+    System.Console.WriteLine($"Posição Nº{contador} - valor: {listaString[contador]}");
+    contador++;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// int[] arrayInteiros = new int[3]; //se eu não quiser passar o tamanho do array ao instanciar, tenho que passar os valores, conforme abaixo
+// // int[] arrayInteiros = new int[] {32,452, 326};
+
+
+// arrayInteiros[0] = 32;
+// arrayInteiros[1] = 452;
+// arrayInteiros[2] = 326;
+
+// usar FOR caso precise do índice
+// System.Console.WriteLine("Iterando com o for");
+// for (int i = 0; i < arrayInteiros.Length; i++)
+// {
+//     System.Console.WriteLine($"Posição Nº{i} - valor: {arrayInteiros[i]}");
+// }
+
+// System.Console.WriteLine("Iterando com o foreach");
+
+// //usar FOREACH se não for precisar do índice
+// foreach(int valor in arrayInteiros) {
+//     System.Console.WriteLine(valor);
+// }
 
 
 // Pessoa p1 = new Pessoa();
